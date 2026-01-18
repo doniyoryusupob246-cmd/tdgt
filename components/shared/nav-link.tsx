@@ -5,13 +5,13 @@ interface Props {
   className?: string;
 }
 export const navlink = [
-  { text: 'Ana Sayfa', link: '#!' },
-  { text: 'Hakkımızda', link: '#!' },
+  { text: 'Ana Sayfa', link: '/' },
+  { text: 'Hakkımızda', link: '/hakkimizda' },
   { text: 'Etkinliklerimiz', link: '#!' },
   { text: 'Projelerimiz', link: '#!' },
   { text: 'Sertifikalar', link: '#!' },
   { text: 'Dergimiz', link: '#!' },
-  { text: 'Temsilcilerimiz', link: '#!' },
+  { text: 'Temsilcilerimiz', link: '/temsilcilerimiz' },
 ];
 
 export const NavLink: React.FC<Props> = ({ className }) => {
