@@ -9,7 +9,7 @@ export const navlink = [
   { text: 'Hakkımızda', link: '/hakkimizda' },
   { text: 'Etkinliklerimiz', link: '#!' },
   { text: 'Projelerimiz', link: '#!' },
-  { text: 'Sertifikalar', link: '#!' },
+  { text: 'Sertifikalar', link: '/sertifikalar' },
   { text: 'Dergimiz', link: '#!' },
   { text: 'Temsilcilerimiz', link: '/temsilcilerimiz' },
 ];
