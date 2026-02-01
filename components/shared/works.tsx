@@ -54,7 +54,7 @@ export const Works: React.FC<Props> = ({ className }) => {
 
             <Image
               className="w-full h-auto rounded-[2.5rem] relative z-10 transform transition-transform duration-500 hover:rotate-2 hover:scale-[1.02]"
-              src={'/wokr.png'}
+              src={'/work.png'}
               alt="Türk Dünyası"
               width={500}
               height={600}
