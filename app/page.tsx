@@ -5,7 +5,7 @@ import { Works } from '@/components/shared/works';
 export default function Home() {
   return (
     <>
-      <Header />
+      {/* <Header /> */}
       <About />
       <Works />
     </>

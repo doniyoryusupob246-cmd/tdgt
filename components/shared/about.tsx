@@ -30,11 +30,12 @@ export const About: React.FC<Props> = ({ className }) => {
 
             <div className="w-full md:w-125 p-6 bg-white rounded-3xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_8px_30px_rgb(0,171,194,0.15)] border border-gray-50 transition-all duration-300 hover:-translate-y-1">
               <p className="text-[15px] font-medium leading-relaxed text-gray-700">
-                Diriliş, Kuruluş ve Kurtuluş’un Şehri <span className="text-[#00ABC2] font-bold">Bilecik’te</span> Türk Dünyası’nın birliği için
-                çalışmalarımıza tüm kararlığımızla devam ediyoruz.
+                Diriliş, Kuruluş ve Kurtuluş’un Şehri{' '}
+                <span className="text-black font-bold">Bilecik’te</span> Türk Dünyası’nın birliği
+                için çalışmalarımıza tüm kararlığımızla devam ediyoruz.
               </p>
               <p className="text-[14px] mt-4 italic text-gray-500 font-medium">
-                "Gelecek Gençliğin omuzlarında yükselecek. Güçlü gençlik, Güçlü yarınlar..."
+                Gelecek Gençliğin omuzlarında yükselecek. Güçlü gençlik, Güçlü yarınlar...
               </p>
             </div>
 

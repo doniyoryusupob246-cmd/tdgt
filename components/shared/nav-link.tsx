@@ -7,10 +7,10 @@ interface Props {
 export const navlink = [
   { text: 'Ana Sayfa', link: '/' },
   { text: 'Hakkımızda', link: '/hakkimizda' },
-  { text: 'Etkinliklerimiz', link: '#!' },
-  { text: 'Projelerimiz', link: '#!' },
-  { text: 'Sertifikalar', link: '/sertifikalar' },
-  { text: 'Dergimiz', link: '#!' },
+  { text: 'Etkinliklerimiz', link: '/devolepment' },
+  { text: 'Projelerimiz', link: '/devolepment' },
+  { text: 'Sertifikalar', link: '/devolepment' },
+  { text: 'Dergimiz', link: '/devolepment' },
   { text: 'Temsilcilerimiz', link: '/temsilcilerimiz' },
 ];
 

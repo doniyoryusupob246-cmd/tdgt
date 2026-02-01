@@ -12,7 +12,6 @@ export const Works: React.FC<Props> = ({ className }) => {
     <div className={cn('my-20 md:my-32', className)}>
       <Container>
         <div className="flex flex-col md:flex-row items-center justify-between gap-12 md:gap-8">
-
           <div className="w-full md:w-[55%] space-y-8 order-2 md:order-1">
             <h2 className="font-extrabold text-[28px] md:text-[36px] bg-gradient-to-r from-blue-700 to-[#00ABC2] bg-clip-text text-transparent leading-tight text-center md:text-left">
               Türk Dünyası gençliğine mesajımız
@@ -23,20 +22,27 @@ export const Works: React.FC<Props> = ({ className }) => {
 
               <div className="relative z-10 space-y-6 text-gray-700 leading-relaxed font-medium">
                 <p className="text-[15px] md:text-[16px]">
-                  Türk Dünyası’nın tarih sahnesindeki yürüyüşü, yalnızca geçmişin hatıralarından ibaret değildir;
-                  aynı zamanda bugünün ve yarının gençliğine yol gösteren güçlü bir birikimdir.
-                  <span className="text-[#00ABC2] font-semibold"> Orta Asya bozkırlarından Anadolu’ya, Balkanlar’dan Kafkasya’ya</span> uzanan bu tarih;
-                  ilimle, adaletle ve güçlü bir toplumsal dayanışma anlayışıyla şekillenmiştir.
+                  Türk Dünyası’nın tarih sahnesindeki yürüyüşü, yalnızca geçmişin hatıralarından
+                  ibaret değildir; aynı zamanda bugünün ve yarının gençliğine yol gösteren güçlü bir
+                  birikimdir.
+                  <span className="text-black font-semibold">
+                    Orta Asya bozkırlarından Anadolu’ya, Balkanlar’dan Kafkasya’ya
+                  </span>
+                  uzanan bu tarih; ilimle, adaletle ve güçlü bir toplumsal dayanışma anlayışıyla
+                  şekillenmiştir.
                 </p>
 
                 <p className="text-[15px] md:text-[16px]">
                   Bu miras, korunması gereken bir değer ve geliştirilmesi gereken bir sorumluluktur.
-                  Bugünün gençliği; bilimde, teknolojide ve sanatta güçlü olmalı; köklerinden kopmadan,
-                  tarihini bilen ve <span className="text-blue-600 font-semibold">ortak gelecek bilinciyle</span> hareket eden bir anlayışla yükselmelidir.
+                  Bugünün gençliği; bilimde, teknolojide ve sanatta güçlü olmalı; köklerinden
+                  kopmadan, tarihini bilen ve
+                  <span className="text-black font-semibold">ortak gelecek bilinciyle</span> hareket
+                  eden bir anlayışla yükselmelidir.
                 </p>
 
                 <div className="p-4 bg-blue-50/50 rounded-xl border-l-4 border-[#00ABC2] italic text-gray-600 text-[15px]">
-                  "İnanıyoruz ki; tarihini bilen, bilimi rehber edinen ve kardeşlik şuuruyla hareket eden Türk Dünyası gençliği, geleceğin güçlü yarınlarını inşa edecektir."
+                  İnanıyoruz ki; tarihini bilen, bilimi rehber edinen ve kardeşlik şuuruyla hareket
+                  eden Türk Dünyası gençliği, geleceğin güçlü yarınlarını inşa edecektir.
                 </div>
               </div>
             </div>
@@ -54,7 +60,6 @@ export const Works: React.FC<Props> = ({ className }) => {
               height={600}
             />
           </div>
-
         </div>
       </Container>
     </div>

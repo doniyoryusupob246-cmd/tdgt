@@ -1,5 +1,3 @@
-
-
 'use client';
 
 import React, { useState } from 'react';
@@ -15,23 +13,21 @@ interface Props {
 }
 
 const socialLink = [
-  { link: '', img: '/social/instagram.svg' },
-  { link: '', img: '/social/facebook.svg' },
-  { link: '', img: '/social/x.svg' },
-  { link: '', img: '/social/linkedin.svg' },
-  { link: '', img: '/social/youtube.svg' },
-  { link: '', img: '/social/telegram.svg' },
-  { link: '', img: '/social/tiktok.svg' },
-  { link: '', img: '/social/linkedin.svg' },
-];
-
-const countres = [
-  'Türk Dünyası Gənclər Birliyi',
-  'Түркі әлемі жастар қауымдастығы',
-  'Turk dunyosi yoshlar jamiyati',
-  'Түрк дүйнөсүнүн жаштар коомчулугу',
-  'Türk dünýä ashlar jemgyýeti',
-  'Türk Világifjúsági Közösség',
+  { link: 'https://www.instagram.com/bilecik_tdgk/', img: '/social/instagram.svg' },
+  {
+    link: 'https://www.pinterest.com/tdgtbseu/?invite_code=2d976c45224d48818ad1617f6bd7d5ae&sender=1140677549278689770',
+    img: '/social/pinterest.svg',
+  },
+  { link: 'https://x.com/tdgt_bseu?t=Ft6kbUzws2aLIIMtp9RNiQ&s=09', img: '/social/x.svg' },
+  {
+    link: 'https://www.linkedin.com/in/t%C3%BCrk-d%C3%BCnyasi-gen%C3%A7lik-toplulu%C4%9Fu-bilecik-37b804379/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
+    img: '/social/linkedin.svg',
+  },
+  { link: 'https://www.youtube.com/@tdgkbilecik', img: '/social/youtube.svg' },
+  {
+    link: 'https://www.tiktok.com/@tdgt_bseu?is_from_webapp=1&sender_device=pc',
+    img: '/social/tiktok.svg',
+  },
 ];
 
 export const Nav: React.FC<Props> = ({ className }) => {
@@ -42,17 +38,20 @@ export const Nav: React.FC<Props> = ({ className }) => {
       <Container>
         <div className="flex items-center justify-between ">
           <Link href="/" className="flex items-center gap-3">
-            <Image src={'/logo.png'} alt="Logo" width={100} height={100} className="w-[80px] h-[80px] sm:w-[100px] sm:h-[100px]" />
+            <Image
+              src={'/logo.png'}
+              alt="Logo"
+              width={100}
+              height={100}
+              className="w-[80px] h-[80px] sm:w-[100px] sm:h-[100px]"
+            />
             <p className="w-38 leading-4.5 font-bold text-[14px] sm:text-[16px] uppercase">
               Türk Dünyası Gençlik Topluluğu
             </p>
           </Link>
 
           {/* Mobile Menu Button */}
-          <button
-            className="md:hidden p-2"
-            onClick={() => setIsOpen(!isOpen)}
-          >
+          <button className="md:hidden p-2" onClick={() => setIsOpen(!isOpen)}>
             {isOpen ? <X size={30} /> : <Menu size={30} />}
           </button>
 
@@ -67,17 +66,7 @@ export const Nav: React.FC<Props> = ({ className }) => {
             </div>
           </div>
         </div>
-
-        {/* Desktop Countries */}
-        <div className="hidden md:flex items-center mt-5 justify-between">
-          {countres.map((text) => (
-            <Link href="/" className="text-center text-[16px] font-bold text-[#B1B1B1]" key={text}>
-              {text}
-            </Link>
-          ))}
-        </div>
       </Container>
-
 
       {/* Desktop Sub-Nav */}
       <div className="bg-[#00ABC2] mt-4 hidden md:block">
@@ -98,30 +87,10 @@ export const Nav: React.FC<Props> = ({ className }) => {
                     key={nav.text}
                     href={nav.link}
                     className="text-[18px] font-bold uppercase text-black py-2 border-b border-gray-100 last:border-0 hover:text-[#00ABC2] transition-colors"
-                    onClick={() => setIsOpen(false)}
-                  >
+                    onClick={() => setIsOpen(false)}>
                     {nav.text}
                   </Link>
                 ))}
-              </div>
-
-              {/* Countries List */}
-              <div className="flex flex-col gap-3 pt-4 border-t border-gray-200">
-                <p className="text-sm font-semibold text-gray-500 uppercase tracking-widest">
-                  Topluluklar
-                </p>
-                <div className="flex flex-col gap-2">
-                  {countres.map((text) => (
-                    <Link
-                      key={text}
-                      href="/"
-                      className="text-[14px] font-medium text-gray-600 hover:text-[#00ABC2] transition-colors"
-                      onClick={() => setIsOpen(false)}
-                    >
-                      {text}
-                    </Link>
-                  ))}
-                </div>
               </div>
 
               {/* Socials */}
@@ -133,7 +102,13 @@ export const Nav: React.FC<Props> = ({ className }) => {
                          The user's original code had 'className="invert"'. I will keep it but ensure it's correct. 
                          Actually, usually distinct colored icons are better for mobile menu. 
                          Let's assume invert is needed for white icons on white bg. */}
-                    <Image src={social.img} alt="Social Logo" width={28} height={28} className="invert opacity-80 hover:opacity-100" />
+                    <Image
+                      src={social.img}
+                      alt="Social Logo"
+                      width={28}
+                      height={28}
+                      className="invert opacity-80 hover:opacity-100"
+                    />
                   </Link>
                 ))}
               </div>
