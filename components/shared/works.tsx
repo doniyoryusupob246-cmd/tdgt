@@ -24,19 +24,18 @@ export const Works: React.FC<Props> = ({ className }) => {
                 <p className="text-[15px] md:text-[16px]">
                   Türk Dünyası’nın tarih sahnesindeki yürüyüşü, yalnızca geçmişin hatıralarından
                   ibaret değildir; aynı zamanda bugünün ve yarının gençliğine yol gösteren güçlü bir
-                  birikimdir.
-                  <span className="text-black font-semibold">
-                    Orta Asya bozkırlarından Anadolu’ya, Balkanlar’dan Kafkasya’ya
+                  birikimdir.{" "}
+                  <span className="text-black font-semibold bg-gradient-to-r from-blue-700 to-[#00ABC2] bg-clip-text text-transparent">
+                    Orta Asya bozkırlarından Anadolu’ya, Balkanlar’dan Kafkasya’ya uzanan bu tarih;
+                    ilimle, adaletle ve güçlü bir toplumsal dayanışma anlayışıyla şekillenmiştir.
                   </span>
-                  uzanan bu tarih; ilimle, adaletle ve güçlü bir toplumsal dayanışma anlayışıyla
-                  şekillenmiştir.
                 </p>
 
                 <p className="text-[15px] md:text-[16px]">
                   Bu miras, korunması gereken bir değer ve geliştirilmesi gereken bir sorumluluktur.
                   Bugünün gençliği; bilimde, teknolojide ve sanatta güçlü olmalı; köklerinden
                   kopmadan, tarihini bilen ve
-                  <span className="text-black font-semibold">ortak gelecek bilinciyle</span> hareket
+                  <span className="text-black font-semibold bg-gradient-to-r from-blue-700 to-[#00ABC2] bg-clip-text text-transparent"> ortak gelecek bilinciyle</span> hareket
                   eden bir anlayışla yükselmelidir.
                 </p>
 
@@ -54,7 +53,7 @@ export const Works: React.FC<Props> = ({ className }) => {
 
             <Image
               className="w-full h-auto rounded-[2.5rem] relative z-10 transform transition-transform duration-500 hover:rotate-2 hover:scale-[1.02]"
-              src={'/work.png'}
+              src="/work1.png"
               alt="Türk Dünyası"
               width={500}
               height={600}

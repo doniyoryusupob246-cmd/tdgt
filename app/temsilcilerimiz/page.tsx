@@ -5,14 +5,14 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import Image from 'next/image';
 import { Navigation } from 'swiper/modules';
-const imageSlider = ['/owner.jpg', '/arda.jpg', '/umut-arda-yilmaz.jpg'];
+const imageSlider = ['/owner.jpg'];
 export default function OwnerHome() {
   return (
     <>
       <Container>
-        <h2 className="text-[24px] md:text-[32px] max-w-4xl w-full mx-auto text-center font-bold mt-12 mb-8 leading-tight px-4">
-          Bilecik Şeyh Edebali Üniversitesinde Türk Dünyası Gençlik Topluluğu’nun yönetim kurulu
-          başkanlığını yürüten isimler
+        <h2 className="capitalize text-[24px] md:text-[32px] max-w-4xl w-full mx-auto text-center font-bold mt-12 mb-8 leading-tight px-4">
+          Bilecik Şeyh Edebali Üniversitesi <br /> Türk Dünyası Gençlik Topluluğu <br /> yönetim kurulu
+          başkanlığını <br /> yürüten isimler
         </h2>
 
         <div className="w-1/2 md:w-[400px] h-[2px] mx-auto bg-[#989898]/50 mb-8 md:mb-[50px]"></div>
@@ -20,9 +20,9 @@ export default function OwnerHome() {
         <div className="relative max-w-4xl mx-auto px-4 md:px-12">
           <div className="flex flex-col md:flex-row items-center gap-4 md:gap-8">
             {/* LEFT ARROW - Hidden on mobile or positioned differently? Let's make them visible but properly sized */}
-            <button className="hidden md:block cursor-pointer swiper-prev text-4xl font-bold select-none text-gray-400 hover:text-[#00ABC2] transition-colors p-2">
+            {/* <button className="hidden md:block cursor-pointer swiper-prev text-4xl font-bold select-none text-gray-400 hover:text-[#00ABC2] transition-colors p-2">
               ←
-            </button>
+            </button> */}
 
             <Swiper
               modules={[Navigation]}
@@ -45,10 +45,10 @@ export default function OwnerHome() {
               ))}
             </Swiper>
 
-            {/* RIGHT ARROW */}
+            {/* RIGHT ARROW
             <button className="hidden md:block cursor-pointer swiper-next text-4xl font-bold select-none text-gray-400 hover:text-[#00ABC2] transition-colors p-2">
               →
-            </button>
+            </button> */}
           </div>
           <div className="text-center space-y-2 mb-5">
             <h2 className="font-bold text-[24px] md:text-[30px] text-gray-800">Umut Arda YILMAZ</h2>
@@ -59,10 +59,10 @@ export default function OwnerHome() {
           </div>
 
           {/* Mobile Navigation Controls (Below slider) */}
-          <div className="flex md:hidden justify-center gap-12 mt-4 text-3xl font-bold text-gray-400 mb-10">
+          {/* <div className="flex md:hidden justify-center gap-12 mt-4 text-3xl font-bold text-gray-400 mb-10">
             <button className="cursor-pointer swiper-prev hover:text-[#00ABC2]">←</button>
             <button className="cursor-pointer swiper-next hover:text-[#00ABC2]">→</button>
-          </div>
+          </div> */}
         </div>
       </Container>
     </>

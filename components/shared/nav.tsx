@@ -14,19 +14,19 @@ interface Props {
 
 const socialLink = [
   { link: 'https://www.instagram.com/bilecik_tdgk/', img: '/social/instagram.svg' },
-  {
-    link: 'https://www.pinterest.com/tdgtbseu/?invite_code=2d976c45224d48818ad1617f6bd7d5ae&sender=1140677549278689770',
-    img: '/social/pinterest.svg',
-  },
   { link: 'https://x.com/tdgt_bseu?t=Ft6kbUzws2aLIIMtp9RNiQ&s=09', img: '/social/x.svg' },
+  {
+    link: 'https://www.tiktok.com/@tdgt_bseu?is_from_webapp=1&sender_device=pc',
+    img: '/social/tiktok.svg',
+  },
+  { link: 'https://www.youtube.com/@tdgkbilecik', img: '/social/youtube.svg' },
   {
     link: 'https://www.linkedin.com/in/t%C3%BCrk-d%C3%BCnyasi-gen%C3%A7lik-toplulu%C4%9Fu-bilecik-37b804379/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
     img: '/social/linkedin.svg',
   },
-  { link: 'https://www.youtube.com/@tdgkbilecik', img: '/social/youtube.svg' },
   {
-    link: 'https://www.tiktok.com/@tdgt_bseu?is_from_webapp=1&sender_device=pc',
-    img: '/social/tiktok.svg',
+    link: 'https://www.pinterest.com/tdgtbseu/?invite_code=2d976c45224d48818ad1617f6bd7d5ae&sender=1140677549278689770',
+    img: '/social/pinterest.svg',
   },
 ];
 

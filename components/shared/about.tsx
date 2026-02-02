@@ -15,7 +15,7 @@ export const About: React.FC<Props> = ({ className }) => {
           <div className="relative group">
             <div className="absolute -inset-1 bg-gradient-to-r from-[#00ABC2] to-blue-400 rounded-[2rem] blur opacity-25 group-hover:opacity-50 transition duration-1000 group-hover:duration-200"></div>
             <Image
-              src={'/about.png'}
+              src='/about1.png'
               alt="About Us"
               width={400}
               height={350}
@@ -35,7 +35,7 @@ export const About: React.FC<Props> = ({ className }) => {
                 için çalışmalarımıza tüm kararlığımızla devam ediyoruz.
               </p>
               <p className="text-[14px] mt-4 italic text-gray-500 font-medium">
-                Gelecek Gençliğin omuzlarında yükselecek. Güçlü gençlik, Güçlü yarınlar...
+                Gelecek Gençliğin omuzlarında yükselecek. <br /> Güçlü gençlik, Güçlü yarınlar...
               </p>
             </div>
 
