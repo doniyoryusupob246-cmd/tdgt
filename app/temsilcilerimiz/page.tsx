@@ -11,8 +11,7 @@ export default function OwnerHome() {
     <>
       <Container>
         <h2 className="capitalize text-[24px] md:text-[32px] max-w-4xl w-full mx-auto text-center font-bold mt-12 mb-8 leading-tight px-4">
-          Bilecik Şeyh Edebali Üniversitesi <br /> Türk Dünyası Gençlik Topluluğu <br /> yönetim kurulu
-          başkanlığını <br /> yürüten isimler
+          ÜNİVERSİTE BAŞKANLARI
         </h2>
 
         <div className="w-1/2 md:w-[400px] h-[2px] mx-auto bg-[#989898]/50 mb-8 md:mb-[50px]"></div>

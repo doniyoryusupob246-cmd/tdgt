@@ -6,11 +6,55 @@ import Image from 'next/image';
 import { cn } from '@/lib/utils';
 import Link from 'next/link';
 import { NavLink, navlink } from './nav-link';
-import { Menu, X } from 'lucide-react';
+import { Menu, X, ChevronDown } from 'lucide-react';
 
 interface Props {
   className?: string;
 }
+
+const MobileDropdown = ({ nav, setIsOpen }: { nav: any, setIsOpen: (open: boolean) => void }) => {
+  const [isExpanded, setIsExpanded] = useState(false);
+
+  return (
+    <div className="flex flex-col">
+      <button
+        onClick={() => setIsExpanded(!isExpanded)}
+        className="flex items-center justify-between w-full text-[18px] font-bold uppercase text-black py-2 border-b border-gray-100 opacity-80 hover:text-[#00ABC2] hover:opacity-100 transition-colors"
+      >
+        <span>{nav.text}</span>
+        <ChevronDown
+          className={cn(
+            "w-5 h-5 transition-transform duration-300",
+            isExpanded ? "rotate-180 text-[#00ABC2]" : "text-gray-400"
+          )}
+        />
+      </button>
+
+      <div
+        className={cn(
+          "grid transition-all duration-300 ease-in-out",
+          isExpanded ? "grid-rows-[1fr] opacity-100 mt-2 mb-2" : "grid-rows-[0fr] opacity-0"
+        )}
+      >
+        <div className="overflow-hidden">
+          <div className="flex flex-col pl-4 gap-2 border-l-2 border-[#00ABC2]/30 ml-2 py-1">
+            {nav.dropdown?.map((subItem: any) => (
+              <Link
+                key={subItem.text}
+                href={subItem.link!}
+                className="text-[15px] py-1 font-semibold text-gray-600 hover:text-[#00ABC2] transition-colors flex items-center gap-2"
+                onClick={() => setIsOpen(false)}
+              >
+                <div className="w-1 h-1 rounded-full bg-[#00ABC2]/50" />
+                {subItem.text}
+              </Link>
+            ))}
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
 
 const socialLink = [
   { link: 'https://www.instagram.com/bilecik_tdgk/', img: '/social/instagram.svg' },
@@ -83,13 +127,19 @@ export const Nav: React.FC<Props> = ({ className }) => {
               {/* Main Navigation */}
               <div className="flex flex-col gap-2">
                 {navlink.map((nav) => (
-                  <Link
-                    key={nav.text}
-                    href={nav.link}
-                    className="text-[18px] font-bold uppercase text-black py-2 border-b border-gray-100 last:border-0 hover:text-[#00ABC2] transition-colors"
-                    onClick={() => setIsOpen(false)}>
-                    {nav.text}
-                  </Link>
+                  <div key={nav.text} className="flex flex-col">
+                    {nav.dropdown ? (
+                      <MobileDropdown nav={nav} setIsOpen={setIsOpen} />
+                    ) : (
+                      <Link
+                        href={nav.link!}
+                        className="text-[18px] font-bold uppercase text-black py-2 border-b border-gray-100 last:border-0 hover:text-[#00ABC2] transition-colors"
+                        onClick={() => setIsOpen(false)}
+                      >
+                        {nav.text}
+                      </Link>
+                    )}
+                  </div>
                 ))}
               </div>
 

@@ -1,6 +1,6 @@
 import { Container } from '@/components/shared/container';
 import { items } from '@/lib/projeler';
-import { EtkinlikSlider } from '@/components/shared/etkinlik-slider';
+import { EtkinlikGallery } from '@/components/shared/etkinlik-gallery';
 import { CalendarDays } from 'lucide-react';
 
 interface ProjelerPageProps {
@@ -34,10 +34,10 @@ export default async function ProjePage({ params }: ProjelerPageProps) {
             </div>
           </div>
 
-          {/* Slider Section */}
+          {/* Gallery Section */}
           <div className="mb-10">
             {item.images && item.images.length > 0 ? (
-              <EtkinlikSlider images={item.images} />
+              <EtkinlikGallery images={item.images} />
             ) : (
               <div className="w-full h-64 bg-gray-200 rounded-2xl flex items-center justify-center">
                 <p className="text-gray-500">Görsel bulunamadı</p>

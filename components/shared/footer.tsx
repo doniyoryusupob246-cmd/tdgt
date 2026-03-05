@@ -26,15 +26,31 @@ export const Footer: React.FC<Props> = ({ className }) => {
           </div>
 
           {/* Links Grid */}
-          <div className="grid grid-cols-2 sm:grid-cols-3 gap-x-8 gap-y-4 text-center md:text-left">
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-x-8 gap-y-4 text-center md:text-left text-[14px] font-medium text-gray-300">
             {navlink.map((item) => (
-              <Link
-                key={item.text}
-                href={item.link}
-                className="text-gray-300 hover:text-[#00ABC2] text-[14px] font-medium transition-colors hover:translate-x-1"
-              >
-                {item.text}
-              </Link>
+              <React.Fragment key={item.text}>
+                {item.dropdown ? (
+                  // For a dropdown item, we could list its sub-items in the footer
+                  // or just render them flat alongside other top-level links.
+                  // Here we render them flat.
+                  item.dropdown.map((subItem) => (
+                    <Link
+                      key={subItem.text}
+                      href={subItem.link}
+                      className="hover:text-[#00ABC2] transition-colors hover:translate-x-1"
+                    >
+                      {subItem.text}
+                    </Link>
+                  ))
+                ) : (
+                  <Link
+                    href={item.link!}
+                    className="hover:text-[#00ABC2] transition-colors hover:translate-x-1"
+                  >
+                    {item.text}
+                  </Link>
+                )}
+              </React.Fragment>
             ))}
           </div>
         </div>
