@@ -5,7 +5,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import Image from 'next/image';
 import { Navigation } from 'swiper/modules';
-const imageSlider = ['/owner.jpg'];
+const imageSlider = ['/owner1.jpg'];
 export default function OwnerHome() {
   return (
     <>

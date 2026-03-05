@@ -8,10 +8,10 @@ const items = [
   },
   {
     text: "Topluluğumuz, Türk Devletleri Teşkilatı’nın gençlik vizyonu doğrultusunda hareket eden bir gençlik platformu olmanın sorumluluğuyla; Türk Dünyası Gençlik Konseyi bünyesinde faaliyet göstermektedir. Bu çerçevede amacımız, üniversite gençliğini Türk Dünyası perspektifiyle buluşturmak, ortak bir hafıza ve gelecek tasavvuru etrafında bilinçli, üretken ve dayanışmacı bir gençlik zemini oluşturmaktır.",
-    img: '/hakkimizda/2.jpg',
+    img: '/hakkimizda/222.jpg',
   },
   {
-    text: "Bilecik Şeyh Edebali Üniversitesi Türk Dünyası Gençlik Topluluğu olarak, Türk Dünyası’nı yalnızca tarihsel bir alan olarak değil; yaşayan, dönüşen ve geleceğe yön veren dinamik bir medeniyet havzası olarak ele alıyoruz. Anadolu’dan Orta Asya’ya, Balkanlar’dan Kafkasya’ya uzanan geniş coğrafyada ortak kültürel kodlara, benzer toplumsal tecrübelere ve paylaşılan ideallere sahip olduğumuza inanıyoruz. Bu inanç doğrultusunda, gençler arasında kültürel bağları güçlendirmeyi, akademik iş birliklerini teşvik etmeyi ve ortak projeler geliştirmeyi önemsiyoruz.",
+    text: "Türk Dünyası’nı yalnızca tarihsel bir alan olarak değil; yaşayan, dönüşen ve geleceğe yön veren dinamik bir medeniyet havzası olarak ele alıyoruz. Anadolu’dan Orta Asya’ya, Balkanlar’dan Kafkasya’ya uzanan geniş coğrafyada ortak kültürel kodlara, benzer toplumsal tecrübelere ve paylaşılan ideallere sahip olduğumuza inanıyoruz. Bu inanç doğrultusunda, gençler arasında kültürel bağları güçlendirmeyi, akademik iş birliklerini teşvik etmeyi ve ortak projeler geliştirmeyi önemsiyoruz.",
     img: '/hakkimizda/3.jpg',
   },
   {
@@ -26,10 +26,7 @@ const items = [
     text: "Misyonumuz ise; Türk Dünyası gençleri arasında düşünsel ve kültürel etkileşimi artırmak, ortak değerler etrafında birlik bilinci geliştirmek ve gençlerin akademik, sosyal ve kişisel gelişimlerine katkı sağlayacak sürdürülebilir çalışmalar yürütmektir. Bu misyon doğrultusunda, kapsayıcı, katılımcı ve üretken bir topluluk yapısını esas alıyor; her öğrencinin fikirlerini özgürce ifade edebildiği, kendini geliştirebildiği bir ortam oluşturmayı önemsiyoruz.",
     img: '/hakkimizda/6.jpg',
   },
-  {
-    text: "Bilecik Şeyh Edebali Üniversitesi Türk Dünyası Gençlik Topluluğu, geçmişten aldığı ilhamı geleceğe taşıyan bir anlayışla; ortak hafızayı pekiştirmeyi, gençler arasında güçlü bağlar kurmayı ve Türk Dünyası’nın yarınlarına katkı sunmayı amaçlamaktadır. Bu yolda, üniversitemiz başta olmak üzere tüm paydaşlarımızla iş birliği içinde çalışmaya devam ediyor; Türk Dünyası’nın ortak sesi ve vicdanı olma sorumluluğunu gençliğin enerjisiyle taşımayı sürdürüyoruz.",
-    img: '/hakkimizda/7.jpg',
-  },
+
 ];
 
 export default function AboutPage() {
@@ -58,7 +55,7 @@ export default function AboutPage() {
               <div key={index} className={`flex flex-col md:flex-row gap-8 md:gap-16 items-center group`}>
                 {/* Image */}
                 <div className={`w-full md:w-1/2 ${isReverse ? 'md:order-2' : 'md:order-1'}`}>
-                  <div className="relative rounded-3xl overflow-hidden shadow-xl transform transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl">
+                  <div className="relative rounded-3xl overflow-hidden shadow-xl ">
                     <div className="absolute inset-0 bg-[#00ABC2]/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none z-10"></div>
                     <Image
                       width={500}

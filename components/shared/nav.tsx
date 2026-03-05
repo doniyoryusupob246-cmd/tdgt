@@ -68,10 +68,7 @@ const socialLink = [
     link: 'https://www.linkedin.com/in/t%C3%BCrk-d%C3%BCnyasi-gen%C3%A7lik-toplulu%C4%9Fu-bilecik-37b804379/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
     img: '/social/linkedin.svg',
   },
-  {
-    link: 'https://www.pinterest.com/tdgtbseu/?invite_code=2d976c45224d48818ad1617f6bd7d5ae&sender=1140677549278689770',
-    img: '/social/pinterest.svg',
-  },
+
 ];
 
 export const Nav: React.FC<Props> = ({ className }) => {

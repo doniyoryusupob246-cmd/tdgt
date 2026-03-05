@@ -30,7 +30,7 @@ export default function GundemPage() {
               </div>
 
               <div className="flex-1 flex flex-col">
-                <p className="text-sm text-[#000]/50 opacity-50 mb-2">
+                <p className="text-sm text-[#000] opacity-70 mb-2">
                   {item.date}
                 </p>
                 <div className="flex justify-between items-start gap-3 mb-3">

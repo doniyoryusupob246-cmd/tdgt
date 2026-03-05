@@ -9,7 +9,7 @@ export default function EtkinliklerPage() {
     <>
       <Container className="py-12 md:py-20">
         <h2 className="mb-12 md:mb-20 font-extrabold text-4xl md:text-5xl bg-gradient-to-r from-blue-700 to-[#00ABC2] bg-clip-text text-transparent leading-tight text-center tracking-tight">
-          Etkinliklerimiz
+          ETKİNLİKLERİMİZ
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 mb-20">
           {items.map((item) => (
@@ -30,7 +30,7 @@ export default function EtkinliklerPage() {
               </div>
 
               <div className="flex-1 flex flex-col">
-                <p className="text-sm text-[#000]/50 opacity-50 mb-2">
+                <p className="text-sm text-[#000] opacity-70 mb-2">
                   {item.date}
                 </p>
                 <div className="flex justify-between items-start gap-3 mb-3">
