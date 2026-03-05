@@ -52,7 +52,7 @@ export const Works: React.FC<Props> = ({ className }) => {
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[110%] h-[110%] bg-gradient-to-tr from-[#00ABC2] to-purple-400 rounded-full blur-[40px] opacity-20 group-hover:opacity-30 transition-opacity duration-700"></div>
 
             <Image
-              className="w-full h-auto rounded-[2.5rem] relative z-10 transform transition-transform duration-500 hover:rotate-2 hover:scale-[1.02]"
+              className="w-full h-auto rounded-[2.5rem] relative z-10 "
               src="/work1.png"
               alt="Türk Dünyası"
               width={500}

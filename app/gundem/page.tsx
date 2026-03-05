@@ -1,20 +1,20 @@
 import { Container } from '@/components/shared/container';
-import { items } from '@/lib/etkinlik';
+import { items } from '@/lib/gundem';
 import { SquareArrowOutUpRight } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
 
-export default function EtkinliklerPage() {
+export default function GundemPage() {
   return (
     <>
       <Container className="py-12 md:py-20">
         <h2 className="mb-12 md:mb-20 font-extrabold text-4xl md:text-5xl bg-gradient-to-r from-blue-700 to-[#00ABC2] bg-clip-text text-transparent leading-tight text-center tracking-tight">
-          Etkinliklerimiz
+          GÜNDEM
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 mb-20">
           {items.map((item) => (
             <Link
-              href={`/etkinliklerimiz/${item.id}`}
+              href={`/gundem/${item.id}`}
               key={item.id}
               className="group flex flex-col p-5 bg-white rounded-3xl border border-gray-100 shadow-sm hover:shadow-xl hover:border-blue-100 transition-all duration-300 ease-in-out hover:-translate-y-1"
             >

@@ -5,7 +5,7 @@ import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import * as z from 'zod';
 import { Container } from './container';
-import { Loader2, Send } from 'lucide-react';
+import { Loader2, Mail, Phone, Send } from 'lucide-react';
 import { sendContactEmail } from '../../actions/sendEmail';
 import { toast } from 'sonner';
 
@@ -65,7 +65,7 @@ export const Iletisim = () => {
                 <div className="max-w-3xl mx-auto">
                     {/* Header */}
                     <div className="text-center mb-12 flex flex-col items-center">
-                        <h2 className="text-4xl md:text-5xl font-extrabold text-gray-900 mb-4 bg-gradient-to-r from-blue-700 to-[#00ABC2] bg-clip-text text-transparent">
+                        <h2 className="pb-2 text-4xl md:text-5xl font-extrabold text-gray-900 mb-4 bg-gradient-to-r from-blue-700 to-[#00ABC2] bg-clip-text text-transparent">
                             Bize Ulaşın
                         </h2>
                         <div className="w-24 h-1.5 bg-gradient-to-r from-blue-600 to-[#00ABC2] rounded-full mb-6" />
@@ -178,6 +178,63 @@ export const Iletisim = () => {
                                 )}
                             </button>
                         </form>
+                    </div>
+                </div>
+                {/* Map & Contact Info Section */}
+                <div className='mt-20'>
+                    <div className="text-center mb-12 flex flex-col items-center">
+                        <h2 className='text-3xl md:text-4xl font-extrabold text-gray-900 mb-4 bg-gradient-to-r from-blue-700 to-[#00ABC2] bg-clip-text text-transparent pb-1'>
+                            İletişim Bilgileri
+                        </h2>
+                        <div className="w-16 h-1.5 bg-gradient-to-r from-blue-600 to-[#00ABC2] rounded-full" />
+                    </div>
+
+                    <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 bg-white rounded-3xl shadow-xl shadow-blue-900/5 border border-gray-100 p-6 md:p-8 overflow-hidden">
+
+                        {/* Left Side: Map */}
+                        <div className="lg:col-span-7 w-full h-[300px] sm:h-[400px] lg:h-full min-h-[300px] rounded-2xl overflow-hidden shadow-inner border border-gray-100 relative group">
+                            <div className="absolute inset-0 bg-blue-500/10 pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10"></div>
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3047.748638828611!2d29.967077775471456!3d40.192407069262835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cc75e791df68d1%3A0x8152c406c8498209!2sBilecik%20%C5%9Eeyh%20Edebali%20University!5e0!3m2!1sru!2str!4v1772737827642!5m2!1sru!2str"
+                                className="w-full h-full border-0"
+                                allowFullScreen
+                                loading="lazy"
+                                referrerPolicy="no-referrer-when-downgrade"
+                            ></iframe>
+                        </div>
+
+                        {/* Right Side: Contact Details */}
+                        <div className='lg:col-span-5 flex flex-col justify-center space-y-8 py-4 lg:py-8'>
+
+                            {/* Address */}
+                            <div className='flex items-start gap-4 p-4 rounded-2xl hover:bg-gray-50 transition-colors duration-300 group'>
+                                <div className="flex-shrink-0 w-12 h-12 bg-blue-50 text-blue-600 rounded-full flex items-center justify-center group-hover:bg-[#00ABC2] group-hover:text-white transition-colors duration-300 shadow-sm">
+                                    <Send className='w-5 h-5' />
+                                </div>
+                                <div>
+                                    <h3 className='text-lg font-bold text-gray-900 mb-1'>Adres</h3>
+                                    <p className="text-gray-600 leading-relaxed text-sm sm:text-base">
+                                        Pelitözü Mah. Fatih Sultan Mehmet Bulvarı No:27, 11230 Bilecik Merkez/Bilecik
+                                    </p>
+                                </div>
+                            </div>
+
+                            {/* Email */}
+                            <div className='flex items-start gap-4 p-4 rounded-2xl hover:bg-gray-50 transition-colors duration-300 group'>
+                                <div className="flex-shrink-0 w-12 h-12 bg-blue-50 text-blue-600 rounded-full flex items-center justify-center group-hover:bg-[#00ABC2] group-hover:text-white transition-colors duration-300 shadow-sm">
+                                    <Mail className='w-5 h-5' />
+                                </div>
+                                <div>
+                                    <h3 className='text-lg font-bold text-gray-900 mb-1'>E-posta Adresi</h3>
+                                    <a href="mailto:tdgtbseu@gmail.com" className="text-gray-600 hover:text-[#00ABC2] transition-colors text-sm sm:text-base">
+                                        tdgtbseu@gmail.com
+                                    </a>
+                                </div>
+                            </div>
+
+
+
+                        </div>
                     </div>
                 </div>
             </Container>

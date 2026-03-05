@@ -15,6 +15,7 @@ export const navlink = [
   },
   { text: 'ETKINLIKLERİMİZ', link: '/etkinliklerimiz' },
   { text: 'PROJELERİMİZ', link: '/projelerimiz' },
+  { text: 'GÜNDEM', link: '/gundem' },
   { text: 'SERTİFİKALAR', link: '/devolepment' },
 ];
 

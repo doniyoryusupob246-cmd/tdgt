@@ -13,13 +13,13 @@ export const About: React.FC<Props> = ({ className }) => {
       <Container>
         <div className="flex flex-col md:flex-row items-center justify-around gap-10 md:gap-0">
           <div className="relative group">
-            <div className="absolute -inset-1 bg-gradient-to-r from-[#00ABC2] to-blue-400 rounded-[2rem] blur opacity-25 group-hover:opacity-50 transition duration-1000 group-hover:duration-200"></div>
+            <div className="absolute -inset-1  rounded-[2rem] blur opacity-25 group-hover:opacity-50 transition duration-1000 group-hover:duration-200"></div>
             <Image
-              src='/about1.png'
+              src='/about.png'
               alt="About Us"
               width={400}
               height={350}
-              className="relative w-full max-w-[400px] h-auto rounded-[2rem] shadow-xl transform transition duration-500 hover:scale-[1.02]"
+              className="relative w-full max-w-[400px] h-auto rounded-[2rem] "
             />
           </div>
 
@@ -28,7 +28,7 @@ export const About: React.FC<Props> = ({ className }) => {
               Topluluğumuz
             </h2>
 
-            <div className="w-full md:w-125 p-6 bg-white rounded-3xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_8px_30px_rgb(0,171,194,0.15)] border border-gray-50 transition-all duration-300 hover:-translate-y-1">
+            <div className="w-full md:w-125 p-6 bg-white rounded-3xl shadow-[0_8px_30px_rgb(0,0,0,0.04)]  border border-gray-50 transition-all duration-300 ">
               <p className="text-[15px] font-medium leading-relaxed text-gray-700">
                 Diriliş, Kuruluş ve Kurtuluş’un Şehri{' '}
                 <span className="text-black font-bold">Bilecik’te</span> Türk Dünyası’nın birliği
@@ -39,7 +39,7 @@ export const About: React.FC<Props> = ({ className }) => {
               </p>
             </div>
 
-            <div className="w-full md:w-125 p-6 bg-white rounded-3xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_8px_30px_rgb(0,171,194,0.15)] border border-gray-50 transition-all duration-300 hover:-translate-y-1">
+            <div className="w-full md:w-125 p-6 bg-white rounded-3xl shadow-[0_8px_30px_rgb(0,0,0,0.04)]  border border-gray-50 transition-all duration-300 ">
               <p className="text-[15px] font-medium leading-relaxed text-gray-700">
                 Geçmişin tecrübelerini bugünün aklıyla harmanlayan, farklı coğrafyalardaki Türk
                 gençleri arasında gönül köprüleri kuran ve bu birlikteliği kalıcı hâle getirmeyi
