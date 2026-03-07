@@ -28,7 +28,7 @@ export const Loader = () => {
 
     return (
         <div
-            className={`fixed inset-0 z-[9999] flex items-center justify-center bg-[#00ABC2] sm:bg-white transition-opacity duration-500 ${isFading ? "opacity-0 pointer-events-none" : "opacity-100"
+            className={`fixed inset-0 z-[9999] flex items-center justify-center bg-white transition-opacity duration-500 ${isFading ? "opacity-0 pointer-events-none" : "opacity-100"
                 }`}
         >
             <div className="relative w-48 h-48 sm:w-64 sm:h-64 ">
@@ -36,7 +36,7 @@ export const Loader = () => {
                     src="/logo.png"
                     alt="TDGT Logo Loader"
                     fill
-                    className="object-contain drop-shadow-lg sm:drop-shadow-none bg-white rounded-full p-2 sm:p-0 sm:bg-transparent"
+                    className="object-contain bg-white rounded-full p-2 sm:p-0 sm:bg-transparent"
                     priority
                 />
             </div>
